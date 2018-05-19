@@ -5,6 +5,7 @@ function submitComment(commentControl) {
 
     var payload = '{ "documents": [ { "language": "en-US", "id": "1", "text": "' + comments + '" }]}';
 
+    
     $.ajax({
         type: "POST",
         url: url,
